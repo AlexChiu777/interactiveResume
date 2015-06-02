@@ -1,0 +1,49 @@
+
+.container .jumbotron {
+	background-color: #222;
+	border-color: #080808;
+	height:350px
+}
+
+.container .jumbotron h1 {
+	position: relative;
+	top: 30px;
+	bottom: 10px;
+	color: #fff;
+}
+
+.container .jumbotron h2 {
+	color: #fff;
+}
+
+
+.container .jumbotron p {
+	font-size:12px;
+}
+
+.hrborder {
+	border: 5px solid transparent;
+	width: 50%;
+	position: relative;
+	top:60px;
+	bottom: 10px;
+}
+
+
+.homecontent {	
+	position: relative;
+	top: 75px;
+	bottom: 10px;
+	color: #B0B0AC;
+}
+
+.homecontent .panel {
+	background-color: #222;
+}
+
+.homecontent td {
+	padding-right: 15px;
+	font-family:Arial;
+	font-size: 10pt;
+}
+

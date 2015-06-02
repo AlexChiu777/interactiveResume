@@ -1,0 +1,40 @@
+.education {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+.edu {
+	padding-bottom: 10px;	
+	text-align: center;
+	
+}
+
+.rowStyle {
+	padding-bottom: 20px;
+	padding-top: 10px;
+	color: #B0B0AC;
+}
+
+.rowAlign {
+	vertical-align: middle;
+}
+
+.contentAlign {
+	text-align:left
+}
+
+.school {
+	text-align: right;
+}
+
+
+.education .hrborder {
+	border: 2px solid transparent;
+	width: 50%;
+	border-image: url(../../asset/img/diamond-logo.jpeg) 30 stretch;
+	position: relative;
+	top:15px;
+	bottom: 10px;
+}

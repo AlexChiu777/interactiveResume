@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<script src="asset/angular.min.js"></script>
+<script src="asset/angular-route.min.js"></script>
+<script src="asset/jquery-1.11.3.min.js"></script>
+
+<link href="main.css" rel="stylesheet">
+<link href="sections/home/home.css" rel="stylesheet">
+<link href="sections/edu/edu.css" rel="stylesheet">
+<link href="sections/contact/contact.css" rel="stylesheet">
+<link href="sections/work/work.css" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+
+<!-- Angular Scripts  -->
+<script src="app.js"></script>
+<script src="app-route.js"></script>
+
+<!-- Controller -->
+<script src="home.ctrl.js"></script>
+
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Alex Chiu</title>
+</head>
+<body class="body" data-ng-app="app">
+	<div class="content">
+	<section id="navigation">
+		<div class="container" data-ng-controller="HeaderController as head">
+			<div class="navbar navbar-inverse navbar-collapse">
+				<section id="header" class="navbar-header">
+					<div class="navbar-brand">
+						<p>Alex Chiu</p>
+						<h6>Interactive Resume</h6>
+					</div>
+				</section>
+			
+				<section id="navigation" class="pull-right">
+					<ul class="nav navbar-nav">
+						<li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
+						<li ng-class="{ active: isActive('/edu')}"><a href="#/edu">Education</a></li>
+						<li ng-class="{ active: isActive('/work')}"><a href="#/work">Work Experience</a></li>
+						<li ng-class="{ active: isActive('/contact')}"><a href="#/contact">Contact Me</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</section>
+	
+	<section id="content">
+		
+	<div class="container">
+	
+		<div class="container">
+            <ng-view></ng-view>
+        </div>
+		
+	</div>
+	</section>
+	
+	<hr>
+	
+	
+	<section class="footer" id="footer">
+		<div class="container">
+			<table>
+				<tr>
+					<td>Created With:</td>
+					<td>
+						<div class="footSignature">&copy Alex Chiu 2015</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+					 		<li>HTML5 - </li>
+					 		<li>CSS - </li>
+					 		<li>Bootstrap - </li>
+					 		<li>AngularJS</li>
+					 	</ul>		
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	
+</div>
+	
+	
+</body>
+</html>

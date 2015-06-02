@@ -1,0 +1,65 @@
+
+
+.footer li {
+	display: inline;
+}
+
+
+.body {
+	background-color: #222;
+ 	border-color: #080808;	
+}
+
+.active a {
+	background-color: #222 !important;
+}
+
+.container .nav li:hover {
+	border-bottom: 0.1em solid #fff;
+}
+
+.container .navbar-brand p {
+	color: #fff;
+}
+
+.container .navbar-inverse {
+	border-color: #222;
+	background-color: #222;
+}
+
+hr {
+	border-top: #222;
+}
+
+.footer {
+	color: #fff;
+}
+
+.footer table {
+	width: 100%;
+}
+
+.footer tr {
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.footSignature {
+	postion:relative;
+	text-align: right;
+}
+
+.footCreated {
+	text-align: left;
+}	
+
+.logocontainer {
+    width: 50px;
+    height: 20px;
+}
+
+/* resize images */
+.logocontainer img {
+    width: 100%;
+    height: auto;
+}

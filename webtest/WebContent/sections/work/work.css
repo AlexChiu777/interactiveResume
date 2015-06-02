@@ -1,0 +1,15 @@
+.work h2 {
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.work .hrborder {
+	border: 2px solid transparent;
+	width: 50%;
+	border-image: url(../../asset/img/diamond-logo.jpeg) 30 stretch;
+	position: relative;
+	top:15px;
+	bottom: 10px;
+}
