@@ -27,7 +27,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-<link href="main.css" rel="stylesheet">
+<link href="./main.css" rel="stylesheet">
 <link href="./sections/home/home.css" rel="stylesheet" type="text/css">
 <link href="./sections/edu/edu.css" rel="stylesheet" type="text/css">
 <link href="./sections/contact/contact.css" rel="stylesheet"
@@ -58,9 +58,17 @@
 <body class="body" data-ng-app="app">
 	<div class="content">
 		<section id="navigation">
-			<div class="container" data-ng-controller="HeaderController as head">
-				<div class="navbar navbar-inverse navbar-collapse">
-					<section id="header" class="navbar-header">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid"
+					data-ng-controller="HeaderController as head">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
 						<div class="navbar-brand">
 							<h2>
 								Alex Chiu <small class="subh2">Interactive Resume</small>
@@ -70,9 +78,10 @@
 									aria-hidden="true"></span> 06/04/2015
 							</p>
 						</div>
-					</section>
+					</div>
 
-					<section id="navigation" class="pull-right">
+					<div class="collapse navbar-collapse pull-right"
+						id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 							<li ng-class="{ active: isActive('/')}"><a href="#/"><span
 									class="glyphicon glyphicon-home" aria-hidden="true"></span>
@@ -87,9 +96,9 @@
 								href="#/contact"><span class="glyphicon glyphicon-earphone"
 									aria-hidden="true"></span> Contact</a></li>
 						</ul>
-					</section>
+					</div>
 				</div>
-			</div>
+			</nav>
 		</section>
 
 		<section id="content">

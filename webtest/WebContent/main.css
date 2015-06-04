@@ -4,9 +4,6 @@
  	border-color: #080808;	
 }
 
-.active a {
-	background-color: #222 !important;
-}
 
 .container .nav li:hover {
 	border-bottom: 0.1em solid #fff;
@@ -21,9 +18,17 @@
 	background-color: #222;
 }
 
-hr {
-	border-top: #222;
+.navbar-inverse  {
+	background-image: none;
+	border-color: #222;
 }
+
+.active a {
+	background-color: #222 !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+
 
 .footer {
 	position: relative;
@@ -93,6 +98,10 @@ hr {
 
 .subh2 {
 	font-size: 40%;
+}
+
+hr {
+	border-top: #222;
 }
 
 
