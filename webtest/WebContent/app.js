@@ -1,2 +1,2 @@
 'use strict';
-angular.module('app', ['ngRoute', 'appRoute'])
+angular.module('app', ['ngRoute', 'ui.bootstrap', 'appRoute', 'appService'])

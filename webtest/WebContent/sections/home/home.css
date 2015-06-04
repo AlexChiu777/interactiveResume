@@ -32,13 +32,10 @@
 
 .homecontent {	
 	position: relative;
-	top: 75px;
+	top: 70px;
+	right: 20px;
 	bottom: 10px;
 	color: #B0B0AC;
-}
-
-.homecontent .panel {
-	background-color: #222;
 }
 
 .homecontent td {
@@ -46,4 +43,6 @@
 	font-family:Arial;
 	font-size: 10pt;
 }
+
+
 

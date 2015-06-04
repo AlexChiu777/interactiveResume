@@ -1,8 +1,5 @@
 
 
-.footer li {
-	display: inline;
-}
 
 
 .body {
@@ -32,6 +29,8 @@ hr {
 }
 
 .footer {
+	position: relative;
+	
 	color: #fff;
 }
 
@@ -43,6 +42,11 @@ hr {
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
+
+.footer li {
+	display: inline;
+}
+
 
 .footSignature {
 	postion:relative;
@@ -63,3 +67,35 @@ hr {
     width: 100%;
     height: auto;
 }
+
+
+/* For summary pages */
+.contentAlign {
+	text-align:left
+}
+
+.summary {
+	text-align: right !important;
+	
+}
+
+.lastUpdate {
+	font-size: 8pt;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand {
+	padding-top:10px;
+}
+
+.navbar-brand h2 {
+	color :#fff;
+	margin-top: 0;
+}
+
+.subh2 {
+	font-size: 40%;
+}
+
+

@@ -6,6 +6,10 @@ angular
 
 function config ($routeProvider) {
 	$routeProvider
+	/*.when('/', {
+		templateUrl: 'sections/comp/show.tpl.html',
+		controller: 'CollapseDemoCtrl'
+	})*/
 	.when('/', {
 		templateUrl: 'sections/home/home.tpl.html'
 	})

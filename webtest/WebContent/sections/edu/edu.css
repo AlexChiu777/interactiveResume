@@ -11,6 +11,16 @@
 	
 }
 
+.education .summary {
+	position:relative;	
+	margin: 0;
+}
+
+.education .summary p {
+	margin: 0;
+}
+
+
 .rowStyle {
 	padding-bottom: 20px;
 	padding-top: 10px;
@@ -20,15 +30,6 @@
 .rowAlign {
 	vertical-align: middle;
 }
-
-.contentAlign {
-	text-align:left
-}
-
-.school {
-	text-align: right;
-}
-
 
 .education .hrborder {
 	border: 2px solid transparent;

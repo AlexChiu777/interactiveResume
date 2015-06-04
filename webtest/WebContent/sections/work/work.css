@@ -13,3 +13,26 @@
 	top:15px;
 	bottom: 10px;
 }
+
+.workDetailLabel {
+	text-align: center;
+}
+
+.work .summary p {
+	position:relative;
+	left: 200px;
+	text-align: right;
+	width: 52%;	
+	margin: 0;
+}
+
+
+.workDetailLabel {
+	text-align: left;
+}
+
+.workwellStyle {
+	background-color: #222;
+	border: none;
+	color: #B0B0AC;
+}

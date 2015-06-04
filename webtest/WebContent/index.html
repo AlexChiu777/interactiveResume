@@ -1,95 +1,101 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8">
+
+<title>Alex Chiu</title>
 
 <script src="asset/angular.min.js"></script>
 <script src="asset/angular-route.min.js"></script>
 <script src="asset/jquery-1.11.3.min.js"></script>
 
-<link href="main.css" rel="stylesheet">
-<link href="sections/home/home.css" rel="stylesheet">
-<link href="sections/edu/edu.css" rel="stylesheet">
-<link href="sections/contact/contact.css" rel="stylesheet">
-<link href="sections/work/work.css" rel="stylesheet">
-
 <!-- Bootstrap -->
 <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 
+<link href="main.css" rel="stylesheet">
+<link href="sections/home/home.css" rel="stylesheet" type="text/css">
+<link href="sections/edu/edu.css" rel="stylesheet" type="text/css">
+<link href="sections/contact/contact.css" rel="stylesheet" type="text/css">
+<link href="sections/work/work.css" rel="stylesheet" type="text/css">
+<link href="sections/comp/show.css" rel="stylesheet" type="text/css">
+
+
+
+<!-- Bootstrap and Angular UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap.min.js"></script>
+
 <!-- Angular Scripts  -->
 <script src="app.js"></script>
 <script src="app-route.js"></script>
+<script src="app-service.js"></script>
 
 <!-- Controller -->
-<script src="home.ctrl.js"></script>
+<script src="index.ctrl.js"></script>
+<script src="./sections/home/home.ctrl.js"></script>
+<script src="./sections/work/work.ctrl.js"></script>
 
 
-<head>
-<meta charset="ISO-8859-1">
-<title>Alex Chiu</title>
 </head>
 <body class="body" data-ng-app="app">
 	<div class="content">
-	<section id="navigation">
-		<div class="container" data-ng-controller="HeaderController as head">
-			<div class="navbar navbar-inverse navbar-collapse">
-				<section id="header" class="navbar-header">
-					<div class="navbar-brand">
-						<p>Alex Chiu</p>
-						<h6>Interactive Resume</h6>
-					</div>
-				</section>
-			
-				<section id="navigation" class="pull-right">
-					<ul class="nav navbar-nav">
-						<li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-						<li ng-class="{ active: isActive('/edu')}"><a href="#/edu">Education</a></li>
-						<li ng-class="{ active: isActive('/work')}"><a href="#/work">Work Experience</a></li>
-						<li ng-class="{ active: isActive('/contact')}"><a href="#/contact">Contact Me</a></li>
-					</ul>
-				</section>
+		<section id="navigation">
+			<div class="container" data-ng-controller="HeaderController as head">
+				<div class="navbar navbar-inverse navbar-collapse">
+					<section id="header" class="navbar-header">
+						<div class="navbar-brand">
+							<h2>Alex Chiu <small class="subh2">Interactive Resume</small></h2>
+							<p class="lastUpdate">Updated: <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 06/04/2015</p>
+						</div>
+					</section>
+
+					<section id="navigation" class="pull-right">
+						<ul class="nav navbar-nav">
+							<li ng-class="{ active: isActive('/')}"><a href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+							<li ng-class="{ active: isActive('/edu')}"><a href="#/edu"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
+							<li ng-class="{ active: isActive('/work')}"><a href="#/work"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Work Experience</a></li>
+							<li ng-class="{ active: isActive('/contact')}"><a href="#/contact"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact</a></li>
+						</ul>
+					</section>
+				</div>
 			</div>
-		</div>
-	</section>
-	
-	<section id="content">
-		
-	<div class="container">
-	
-		<div class="container">
-            <ng-view></ng-view>
-        </div>
-		
+		</section>
+
+		<section id="content">
+			<div class="content-container">
+				<ng-view></ng-view>
+			</div>
+		</section>
+
+		<hr>
+
+
+		<section class="footer" id="footer">
+			<div class="container">
+				<table>
+					<tr>
+						<td>Created With:</td>
+						<td>
+							<div class="footSignature">&copy Alex Chiu 2015</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>HTML5 -</li>
+								<li>CSS -</li>
+								<li>Bootstrap -</li>
+								<li>AngularJS</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
 	</div>
-	</section>
-	
-	<hr>
-	
-	
-	<section class="footer" id="footer">
-		<div class="container">
-			<table>
-				<tr>
-					<td>Created With:</td>
-					<td>
-						<div class="footSignature">&copy Alex Chiu 2015</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<ul>
-					 		<li>HTML5 - </li>
-					 		<li>CSS - </li>
-					 		<li>Bootstrap - </li>
-					 		<li>AngularJS</li>
-					 	</ul>		
-					</td>
-				</tr>
-			</table>
-		</div>
-	</section>
-	
-</div>
-	
-	
+
+
 </body>
 </html>

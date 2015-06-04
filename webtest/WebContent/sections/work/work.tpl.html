@@ -1,11 +1,79 @@
 
-<section id="work">
+<section id="work" data-ng-controller="workController">
 
-<div class="container work">
-<h2>Work Experience</h2>
-<hr class="hrborder"/>
+	<div class="container work">
+		<h2>Work Experience</h2>
+		<hr class="hrborder" />
+
+		<div class="row rowAlign">
+			<div class="col-sm-9">
+				<div class="row rowStyle">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>ScotiaBank</p></strong>
+						<p>June 2015 - Present</p>
+						<p>Toronto, Ontario</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentALign">
+						<strong>Senior J2EE Developer</strong>
+						<p>Summary of work</p>
+						<div class="workDetailLabel">
+							<a class="workDetailLink" data-ng-click="isCollapsed = !isCollapsed">Details</a>
+						</div>
+						<div collapse="isCollapsed">
+							<div class="well well-sm workwellStyle">Some content</div> 
+						</div>
+					</div>
+				</div>
 
 
-</div>
+				<div class="row rowStyle">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>IDS Management Inc/ Paramount Commerce</p></strong>
+						<p>June 2012 - June 2015</p>
+						<p>Toronto, Ontario</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentALign">
+						<strong>Java Software Developer</strong>
+						<p>Summary of work</p>
+						<div class="workDetailLabel">
+							<a class="workDetailLink">Details</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row rowStyle">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>IDS Management Inc/ Paramount Commerce</p></strong>
+						<p>June 2011 - June 2012</p>
+						<p>Toronto, Ontario</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentALign">
+						<strong>Merchant Integration Engineer</strong>
+						<p>Summary of work</p>
+						<div class="workDetailLabel">
+							<a class="workDetailLink">Details</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row rowStyle">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>IBM Canada</p></strong>
+						<p>April 2009 - August 2010</p>
+						<p>Markham, Ontario</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentALign">
+						<strong>Rational Install Infrastructure Developer - Internship</strong>
+						<p>Summary of work</p>
+						<div class="workDetailLabel">
+							<a class="workDetailLink">Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 
 </section>
