@@ -6,21 +6,17 @@ angular
 
 function config ($routeProvider) {
 	$routeProvider
-	/*.when('/', {
-		templateUrl: 'sections/comp/show.tpl.html',
-		controller: 'CollapseDemoCtrl'
-	})*/
 	.when('/', {
-		templateUrl: 'sections/home/home.tpl.html'
+		templateUrl: './sections/home/home.tpl.html'
 	})
 	.when('/work', {
-			templateUrl: 'sections/work/work.tpl.html'
+			templateUrl: './sections/work/work.tpl.html'
 	})
 	.when('/edu', {
-			templateUrl: 'sections/edu/edu.tpl.html'
+			templateUrl: './sections/edu/edu.tpl.html'
 	})
 	.when('/contact', {
-			templateUrl: 'sections/contact/contact.tpl.html'
+			templateUrl: './sections/contact/contact.tpl.html'
 	})
 		.otherwise({redirectTo: '/'});
 }
