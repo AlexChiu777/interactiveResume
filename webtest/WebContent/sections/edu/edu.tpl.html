@@ -1,41 +1,26 @@
-<section id = "education">
+<section id="education" data-ng-controller="educationController as educationCtrl">
 
-<div class="container education">
-	
-	<h2 class="edu">Education</h2>
-	<hr class="hrborder"/>
-	
-<div class="row rowAlign">
-  <div class="col-sm-9">
-    <div class="row rowStyle">
-      <div class="col-xs-6 col-sm-6 summary">
-        <strong><p>Ryerson University</p></strong>
-        <p>Sept 2006 - April 2011</p>
-        <p>Toronto, Ontario</p>
-      </div>
-      <div class="col-xs-6 col-sm-6 contentAlign" >
-        <strong>Bachelor of Computer Engineering</strong>
-        <p>Relevant courses: Operating Systems, Microprocessor Systems, HW/ SW Co-design Embedded Systems, 
-        Computer Organization and Architecture, Programming Languages, Object Orientated Analysis and Design, 
-        Software Engineering, and Computer Networks</p>
-      </div>
-    </div>
-    
-    
-   	<div class="row rowStyle">
-      <div class="col-xs-6 col-sm-6 summary">
-        <strong><p>Markham District</p></strong>
-        <p>Sept 2002 - June 2006</p>
-        <p>Markham, Ontario</p>
-      </div>
-      <div class="col-xs-6 col-sm-6 contentAlign" >
-        <strong>High School</strong>
-        <p>Beginning of the education where I was able to become passionate about development. 
-        I've had beginner courses in programming languages such as Pascal, Turing as well as Java.</p>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="container education">
 
-</div>
+		<h2 class="edu">Education</h2>
+		<hr class="hrborder" />
+
+		<div class="row rowAlign">
+			<div class="col-sm-9" >
+				<div class="row rowStyle" data-ng-repeat="ed in educationCtrl.educations">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>{{ed.name}}</p></strong>
+						<p>{{ed.period}}</p>
+						<p>{{ed.location}}</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentAlign">
+						<strong>{{ed.program}}</strong>
+						<p>{{ed.summary}}</p>
+						<b>Relevant courses: </b><p>{{ed.relevantCourses}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </section>
