@@ -27,3 +27,13 @@
 	border: none;
 	color: #B0B0AC;
 }
+
+.workwellStyle ul {
+	padding-left:20px;
+}
+
+.workwellStyle li {
+	color: #000;
+	padding-right:15px;
+
+}

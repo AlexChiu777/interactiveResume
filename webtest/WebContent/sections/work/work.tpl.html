@@ -20,7 +20,11 @@
 								<a class="workDetailLink" data-ng-click="work.isCollapsed = !work.isCollapsed">{{work.details}}</a>
 						</div>
 						<div collapse="work.isCollapsed">
-							<div class="well well-sm workwellStyle">{{work.extraInfo}}</div> 
+							<div class="well well-sm workwellStyle">
+								<ul data-ng-repeat="extra in work.extraInfo">
+									<li>{{extra}}</li>
+								</ul>
+							</div> 
 						</div>
 					</div>
 				</div>
