@@ -24,9 +24,9 @@
 }
 
 .active a {
-	background-color: #222 !important;
-	background-image: none !important;
+	background: #222 none !important;
 	box-shadow: none !important;
+	border-bottom: double #fff;
 }
 
 
