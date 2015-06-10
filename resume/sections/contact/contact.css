@@ -1,0 +1,26 @@
+.contactTable td {
+	color: #B0B0AC;
+	padding: 15px;	
+	
+}
+
+.contactTable {
+	text-align: left;
+}
+
+.contact h2 {
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.contact .hrborder {
+	border: 2px solid #fff;
+	width: 50%;
+	border-image: url(../../asset/img/diamond-logo.jpeg) 30 stretch;
+	position: relative;
+	top:15px;
+	bottom: 10px;
+	color: #fff;
+}

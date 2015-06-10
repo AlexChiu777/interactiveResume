@@ -1,0 +1,26 @@
+<section id="education" data-ng-controller="educationController as educationCtrl">
+
+	<div class="container education">
+
+		<h2 class="edu">Education</h2>
+		<hr class="hrborder" />
+
+		<div class="row rowAlign">
+			<div class="col-sm-9" >
+				<div class="row rowStyle" data-ng-repeat="ed in educationCtrl.educations">
+					<div class="col-xs-6 col-sm-6 summary">
+						<strong><p>{{ed.name}}</p></strong>
+						<p>{{ed.period}}</p>
+						<p>{{ed.location}}</p>
+					</div>
+					<div class="col-xs-6 col-sm-6 contentAlign">
+						<strong>{{ed.program}}</strong>
+						<p>{{ed.summary}}</p>
+						<b>Relevant courses: </b><p>{{ed.relevantCourses}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>

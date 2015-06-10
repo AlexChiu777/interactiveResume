@@ -1,0 +1,42 @@
+.education {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+.edu {
+	padding-bottom: 10px;	
+	text-align: center;
+	
+}
+
+.education .summary {
+	position:relative;	
+	margin: 0;
+}
+
+.education .summary p {
+	margin: 0;
+}
+
+
+.rowStyle {
+	padding-bottom: 20px;
+	padding-top: 10px;
+	color: #B0B0AC;
+}
+
+.rowAlign {
+	vertical-align: middle;
+}
+
+.education .hrborder {
+	border: 2px solid #fff;
+	width: 50%;
+	border-image: url(../../asset/img/diamond-logo.jpeg) 30 stretch;
+	position: relative;
+	top:15px;
+	bottom: 10px;
+	color: #fff;
+}
